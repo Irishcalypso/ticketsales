@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+    <form>
+      <fieldset>
+        <legend>Select Your Tickets:</legend>
+        <label for="adult">Adult:</label>
+        <input type="number" name="adult" id="adult" min="0" max="10" value="0"><br>
+        <label for="child">Child:</label>
+        <input type="number" name="child" id="child" min="0" max="10" value="0"><br>
+        <label for="senior">Senior:</label>
+        <input type="number" name="senior" id="senior" min="0" max="10" value="0"><br>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Personal Information:</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone"><br>
+      </fieldset>
+      <br>
+      <input type="submit" value="Checkout">
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!--```
+In this example, the form includes a fieldset for selecting the tickets, which includes input fields for the number of adult, child, and senior tickets. There is also a fieldset for personal information, which includes input fields for name, email, and phone number. The form has a submit button to initiate the checkout process. 
+
+Note that this is just a basic example and you would need to integrate it with a backend system to actually process payments and purchase the tickets. Additionally, you would need to add styling and additional functionality to make the shopping cart more user-friendly and accessible.-->
